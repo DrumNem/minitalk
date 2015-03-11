@@ -5,7 +5,7 @@
 ## Login   <perra_t@epitech.net>
 ## 
 ## Started on  Thu Feb 26 16:13:40 2015 tiphaine perra
-## Last update Wed Mar 11 16:14:39 2015 tiphaine perra
+## Last update Wed Mar 11 17:05:32 2015 tiphaine perra
 ##
 
 LDFLAGS =	-Llib/my -lmy
@@ -18,17 +18,17 @@ OBJ_S	=	$(SRC_S:.c=.o)
 
 OBJ_C	=	$(SRC_C:.c=.o)
 
-NAME_S	=	server
+NAME_S	=	serv
 
-NAME_C	=	client
+NAME_C	=	cli
 
 all:	$(NAME_S)
 
 $(NAME_S):	$(OBJ_S) $(OBJ_C)
 	cc -o $(NAME_S) $(OBJ_S) $(LDFLAGS)
-	cp $(NAME_S) Server/$(NAME_S)
+	cp $(NAME_S) server/server
 	cc -o $(NAME_C) $(OBJ_C) $(LDFLAGS)
-	cp $(NAME_C) Client/$(NAME_C)
+	cp $(NAME_C) client/client
 
 
 clean:
