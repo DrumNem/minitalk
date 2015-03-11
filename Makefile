@@ -5,14 +5,14 @@
 ## Login   <perra_t@epitech.net>
 ## 
 ## Started on  Thu Feb 26 16:13:40 2015 tiphaine perra
-## Last update Thu Mar  5 09:06:02 2015 tiphaine perra
+## Last update Wed Mar 11 11:00:52 2015 tiphaine perra
 ##
 
 SRC_S	=	my_serveur.c
 
 OBJ_S	=	$(SRC_S:.c=.o)
 
-NAME_S	=	serveur
+NAME_S	=	server
 
 CFLAGS	+=	-I ./include/ -W -Wall -pedantic -ansi -D_BSD_SOURCE -D_XOPEN_SOURCE
 
@@ -30,7 +30,7 @@ all	:	$(NAME_S) $(NAME_C)
 
 $(NAME_S):	$(OBJ_S)
 	@$(CC) $(CFLAGS) -o $(NAME_S) $(OBJ_S) $(LDFLAGS) $(LDLIBS)
-	@echo "Compilation serveur complete"
+	@echo "Compilation server complete"
 
 $(NAME_C):	$(OBJ_C)
 	@$(CC) $(CFLAGS) -o $(NAME_C) $(OBJ_C) $(LDFLAGS) $(LDLIBS)
