@@ -5,10 +5,11 @@
 ** Login   <perra_t@epitech.net>
 ** 
 ** Started on  Wed Feb 25 16:51:57 2015 tiphaine perra
-** Last update Thu Mar  5 09:39:43 2015 tiphaine perra
+** Last update Wed Mar 11 16:15:11 2015 tiphaine perra
 */
 
-#include "mini.h"
+#include "include/mini.h"
+#include "include/my.h"
 
 void		catch(int sign)
 {
@@ -16,15 +17,10 @@ void		catch(int sign)
   static char	letter = 0;
 
   if (sign == SIGUSR1)
-    {
-      letter &= ~(1 << k);
-      k++;
-    }
+    letter &= ~(1 << k);
   else
-    {
-      letter |= (1 << k);
-      k++;
-    }
+    letter |= (1 << k);
+  k++;
   if (k == 8)
     {
       my_printf("%c", letter);

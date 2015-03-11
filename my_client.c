@@ -5,10 +5,11 @@
 ** Login   <perra_t@epitech.net>
 ** 
 ** Started on  Wed Feb 25 16:46:58 2015 tiphaine perra
-** Last update Thu Mar  5 16:57:28 2015 tiphaine perra
+** Last update Wed Mar 11 15:49:54 2015 tiphaine perra
 */
 
-#include "mini.h"
+#include "include/mini.h"
+#include "include/my.h"
 
 void	aff_msg(char **av)
 {
