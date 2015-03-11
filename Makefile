@@ -5,7 +5,7 @@
 ## Login   <perra_t@epitech.net>
 ## 
 ## Started on  Thu Feb 26 16:13:40 2015 tiphaine perra
-## Last update Wed Mar 11 11:00:52 2015 tiphaine perra
+## Last update Wed Mar 11 11:13:48 2015 tiphaine perra
 ##
 
 SRC_S	=	my_serveur.c
@@ -30,11 +30,9 @@ all	:	$(NAME_S) $(NAME_C)
 
 $(NAME_S):	$(OBJ_S)
 	@$(CC) $(CFLAGS) -o $(NAME_S) $(OBJ_S) $(LDFLAGS) $(LDLIBS)
-	@echo "Compilation server complete"
 
 $(NAME_C):	$(OBJ_C)
 	@$(CC) $(CFLAGS) -o $(NAME_C) $(OBJ_C) $(LDFLAGS) $(LDLIBS)
-	@echo "Compilation client complete"
 
 clean	:
 	@$(RM) $(OBJ_S)
