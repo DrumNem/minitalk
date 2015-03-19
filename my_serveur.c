@@ -5,7 +5,7 @@
 ** Login   <perra_t@epitech.net>
 ** 
 ** Started on  Wed Feb 25 16:51:57 2015 tiphaine perra
-** Last update Thu Mar 19 17:55:04 2015 tiphaine perra
+** Last update Thu Mar 19 20:41:53 2015 tiphaine perra
 */
 
 #include "include/mini.h"
@@ -43,6 +43,7 @@ int		main()
   aff_pid();
   signal(SIGUSR1, catch);
   signal(SIGUSR2, catch);
-  while (42);
+  while (42)
+    sleep(1);
   return (0);
 }
