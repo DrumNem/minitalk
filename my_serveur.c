@@ -5,7 +5,7 @@
 ** Login   <perra_t@epitech.net>
 ** 
 ** Started on  Wed Feb 25 16:51:57 2015 tiphaine perra
-** Last update Wed Mar 11 16:15:11 2015 tiphaine perra
+** Last update Thu Mar 19 17:55:04 2015 tiphaine perra
 */
 
 #include "include/mini.h"
@@ -40,12 +40,9 @@ void		aff_pid()
 
 int		main()
 {
-  char		*buffer;
-
-  buffer = 0;
   aff_pid();
   signal(SIGUSR1, catch);
   signal(SIGUSR2, catch);
-  read(0, buffer, 1);
+  while (42);
   return (0);
 }
