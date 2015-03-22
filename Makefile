@@ -5,7 +5,7 @@
 ## Login   <perra_t@epitech.net>
 ## 
 ## Started on  Thu Feb 26 16:13:40 2015 tiphaine perra
-## Last update Wed Mar 11 17:05:32 2015 tiphaine perra
+## Last update Sun Mar 22 08:13:40 2015 tiphaine perra
 ##
 
 LDFLAGS =	-Llib/my -lmy
@@ -18,26 +18,27 @@ OBJ_S	=	$(SRC_S:.c=.o)
 
 OBJ_C	=	$(SRC_C:.c=.o)
 
-NAME_S	=	serv
+NAME_S	=	server
 
-NAME_C	=	cli
+NAME_C	=	client
 
-all:	$(NAME_S)
+all:	$(NAME_S) $(NAME_C)
 
-$(NAME_S):	$(OBJ_S) $(OBJ_C)
-	cc -o $(NAME_S) $(OBJ_S) $(LDFLAGS)
-	cp $(NAME_S) server/server
-	cc -o $(NAME_C) $(OBJ_C) $(LDFLAGS)
-	cp $(NAME_C) client/client
+$(NAME_S):	$(OBJ_S)
+	cc -o serv $(OBJ_S) $(LDFLAGS)
+	mv serv ./server/$(NAME_S)
 
+$(NAME_C):	$(OBJ_C)
+	cc -o cli $(OBJ_C) $(LDFLAGS) 
+	mv cli ./client/$(NAME_C)
 
 clean:
 	rm -f $(OBJ_S)
 	rm -f $(OBJ_C)
 
 fclean:	clean
-	rm -f $(NAME_S)
-	rm -f $(NAME_C)
+	rm -f ./server/$(NAME_S)
+	rm -f ./client/$(NAME_C)
 
 re:	fclean all
 

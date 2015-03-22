@@ -5,7 +5,7 @@
 ** Login   <perra_t@epitech.net>
 ** 
 ** Started on  Wed Feb 25 16:46:58 2015 tiphaine perra
-** Last update Thu Mar 19 20:43:48 2015 tiphaine perra
+** Last update Sun Mar 22 08:19:08 2015 tiphaine perra
 */
 
 #include "include/mini.h"
@@ -34,7 +34,7 @@ void	aff_msg(char **av)
 	  else
 	    kill(pid, SIGUSR2);
 	  j++;
-	  usleep(800);
+	  usleep(1200);
 	}
       i++;
     }
