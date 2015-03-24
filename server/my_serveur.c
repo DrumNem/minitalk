@@ -5,11 +5,11 @@
 ** Login   <perra_t@epitech.net>
 ** 
 ** Started on  Wed Feb 25 16:51:57 2015 tiphaine perra
-** Last update Thu Mar 19 20:41:53 2015 tiphaine perra
+** Last update Tue Mar 24 10:39:28 2015 tiphaine perra
 */
 
-#include "include/mini.h"
-#include "include/my.h"
+#include "../include/mini.h"
+#include "../include/my.h"
 
 void		catch(int sign)
 {

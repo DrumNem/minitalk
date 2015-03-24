@@ -5,14 +5,14 @@
 ## Login   <perra_t@epitech.net>
 ## 
 ## Started on  Thu Feb 26 16:13:40 2015 tiphaine perra
-## Last update Sun Mar 22 08:13:40 2015 tiphaine perra
+## Last update Tue Mar 24 10:39:18 2015 tiphaine perra
 ##
 
 LDFLAGS =	-Llib/my -lmy
 
-SRC_S	=	my_serveur.c
+SRC_S	=	server/my_serveur.c
 
-SRC_C	=	my_client.c
+SRC_C	=	client/my_client.c
 
 OBJ_S	=	$(SRC_S:.c=.o)
 
